@@ -50,12 +50,12 @@ res = [ y-x for x, y in zip(rev, rev[1:])]
 deltarev = sum(res)/len(res)
 maxdelta = (max(res))
 mindelta = (min(res))
-dick = dict(zip(date1, res))
+dicty = dict(zip(date1, res))
 
 
 maxmax = []
 minmin = []
-for k,v in dick.items():
+for k,v in dicty.items():
         if int(maxdelta) == v:
             maxmax.append(k)
             maxmax.append(v)
